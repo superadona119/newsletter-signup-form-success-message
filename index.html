@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+</head>
+<body>
+  <main>
+
+    <div class="card">
+      <div class="image__container">
+        <div class="container__img"></div>
+      </div>
+      <!-- Sign-up form start -->
+      <section class="card__info">
+        <div class="info__description">
+          <h3 class="description__title">Stay updated!</h3>
+          <p class="description__text">Join 60,000+ product managers receiving monthly updates on:</p>
+        </div>
+          <ul class="info__list">
+              <li class="list__element">
+                <svg class="element__icon" ></svg>
+                <p class="element_p">Product discovery and building what matters</p>
+              </li>
+              <li class="list__element">
+                <svg class="element__icon" ></svg>
+                <p class="element_p">Measuring to ensure updates are a success</p>
+              </li>
+              <li class="list__element">
+                <svg class="element__icon" ></svg>
+                <p class="element_p">And much more!</p>
+              </li>
+          </ul>
+    
+          <form class="info__form">
+            <div class="form__field">
+              <label for="email" class="field__label">Email address</label>
+              <input type="email" id="email" required autocomplete="email" placeholder="email@company.com" class="field__input">
+              <p class="field__error inactive">Valid email required</p>
+            </div>
+            <input type="button" value="Subscribe to monthly newsletter" class="form__button">
+          </form>
+      </section>
+      <!-- Sign-up form end -->
+    
+    </div>
+    <!-- Success message start -->
+    <div class="card__container inactive">
+      <div class="container__box">
+        <span class="box__icon"></span>
+        <h4 class="container__title">Thanks for subscribing!</h4>
+        <p class="container__info">A confirmation email has been sent to <span></span> 
+          Please open it and click the button inside to confirm your subscription.</p>
+      </div>
+      <button class="container__button">Dismiss message</button>
+    </div>
+    <!-- Success message end -->
+  </main>
+  <script src="./script.js"></script>
+</body>
+</html>
